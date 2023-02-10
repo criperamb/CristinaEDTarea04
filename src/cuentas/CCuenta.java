@@ -85,17 +85,28 @@ public class CCuenta {
 	public void setTipoInterés(double tipoInterés) {
 		this.tipoInterés = tipoInterés;
 	}
-
+	/**
+	 * Método estado.
+	 * @return
+	 */
 	public double estado() {
 		return saldo;
 	}
-
+	/**
+	 * Método ingresar.
+	 * @param cantidad
+	 * @throws Exception
+	 */
 	public void ingresar(double cantidad) throws Exception {
 		if (cantidad < 0)
 			throw new Exception("No se puede ingresar una cantidad negativa");
 		saldo = saldo + cantidad;
 	}
-
+	/**
+	 * Método retirar.
+	 * @param cantidad
+	 * @throws Exception
+	 */
 	public void retirar(double cantidad) throws Exception {
 		if (cantidad <= 0)
 			throw new Exception("No se puede retirar una cantidad negativa");
