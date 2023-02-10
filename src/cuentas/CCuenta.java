@@ -7,9 +7,10 @@ public class CCuenta {
 	private double saldo;
 	private double tipoInterés;
 
+	//Constructor por defecto
 	public CCuenta() {
 	}
-
+	//Contructor por parametros
 	public CCuenta(String nom, String cue, double sal, double tipo) {
 		nombre = nom;
 		cuenta = cue;
